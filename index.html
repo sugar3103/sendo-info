@@ -1,0 +1,113 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <title>Sendo List from API</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+</style> -->
+</head>
+
+<body>
+    <div class="text-center" style="margin-bottom:0">
+        <a href="https://xm5sk.codesandbox.io/"><img src="https://27pgum6rk5k4vaedv3c0r1c9-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/sendo-coupons-logo.png" alt="Sendo" class="ml-0" data-was-processed="true" /></a>
+
+        <h1>Sendo Product Page</h1>
+        <p>This list is from Sendo API</p>
+        <p>Made by Đường</p>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <a class=" navbar-brand" href="https://xm5sk.codesandbox.io/">Sendo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#resultTable">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#button">Button</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#informationTable">Information</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Tạo input search nằm ở góc bên phải trước dropdown box-->
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <form id="form1" class="form-control form-control-plaintext">
+                        <input required id="search" type="text" value="" />
+                        <input type="submit" value="Tìm kiếm" />
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!-- Tạo dropdown box nằm ở góc bên phải -->
+    </nav>
+
+    <div class="dropdown text-right">
+        <button button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+        Sắp xếp theo
+      </button>
+        <div class="dropdown-menu">
+            <button id="lowToHigh" class="dropdown-item" type="button">
+          Giá thấp -> cao
+        </button>
+            <button id="highToLow" class="dropdown-item" type="button">
+          Giá cao -> thấp
+        </button>
+            <button id="aToZ" class="dropdown-item" type="button">Tên A-Z</button>
+            <button id="zToA" class="dropdown-item" type="button">Tên Z-A</button>
+            <button id="filterSale" class="dropdown-item" type="button">
+          Filter >50% sale
+        </button>
+            <a class="dropdown-item" href="#informationTable">Test lấy liên kết</a>
+        </div>
+    </div>
+    <div id="resultTable">
+        <table id="list" border="0" class="table table-bordered table-responsive-sm"></table>
+    </div>
+    <div id="resultTable2">
+        <table id="list2" border="0" class="table table-bordered table-responsive-sm"></table>
+    </div>
+    <!--Tạo các button có chức năng sort 
+	tương tự như dropdown box ở trên-->
+    <!-- <div id="button">
+		<button id="lowToHigh" class="btn btn-primary">Price Low to High</button>
+		<button id="highToLow" class="btn btn-primary">Price High to Low</button>
+		<button id="aToZ" class="btn btn-primary">Name A-Z</button>
+		<button id="zToA" class="btn btn-primary">Name Z-A</button>
+		<button id="filterSale" class="btn btn-primary">Filter sales >50%</button>
+  </div> -->
+    <div>
+        <p1 style="font-size:50px;">No items found</p1>
+    </div>
+    <div id="information" class="information">
+        <table id="informationTable">
+            <tr id="titleBottom">
+                <th>Admin</th>
+            </tr>
+            <tr id="titleBottom">
+                <td>Phan Kiện Đường</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
