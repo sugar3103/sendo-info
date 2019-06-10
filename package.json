@@ -1,0 +1,23 @@
+{
+    "name": "sendo-info",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sugar3103/sendo-info.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sugar3103/sendo-info/issues"
+    },
+    "homepage": "https://github.com/sugar3103/sendo-info#readme",
+    "dependencies": {
+        "jquery": "^3.4.1"
+    }
+}
