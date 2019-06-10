@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/sugar3103/sendo-info#readme",
     "dependencies": {
-        "jquery": "^3.4.1"
+        "jquery": "^3.4.1",
+        "parcel-bundler": "^1.12.3"
     }
 }
